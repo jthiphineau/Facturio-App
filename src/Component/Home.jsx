@@ -23,8 +23,8 @@ import { ButtonContainer } from '../Style/Registration'
  * Ce composant affiche l'écran d'accueil
  */
 export default function Home() {
-  // Récupération des todos depuis le store de la page d'accueil
-  const { todos } = useStore(HomeStore)
+  // Récupération des invoices depuis le store de la page d'accueil
+  const { invoices } = useStore(HomeStore)
 
   return (
     <MainContainer>
@@ -33,21 +33,21 @@ export default function Home() {
 
       {/* Container pour les cartes */}
       <CardContainer>
-        {/* Affiche tout les todos */}
-        {todos.map(todo => (
+        {/* Affiche tout les invoices */}
+        {invoices.map(invoice => (
           // Affiche une carte d'une chose à faire
-          <Card key={todo.id}>
+          <Card key={invoice.id}>
             {/* Container pour la vignette de l'utilisateur  */}
             <CardUserContainer>
               <CardUserIcon className="fa-solid fa-user"></CardUserIcon>
               <CardUserLabelContainer>
                 <CardUserLabel>Par</CardUserLabel>
-                <CardUserLabelUsername>{todo.username}</CardUserLabelUsername>
+                <CardUserLabelUsername>{invoice.username}</CardUserLabelUsername>
               </CardUserLabelContainer>
             </CardUserContainer>
 
             {/* Label de la chose à faire */}
-            <CardLabel>{todo.title}</CardLabel>
+            <CardLabel>{invoice.title}</CardLabel>
           </Card>
         ))}
       </CardContainer>

@@ -39,7 +39,7 @@ export default function Login() {
 
   return (
     <CenteredContainer>
-      <Title>Connection</Title>
+      <Title>Connexion</Title>
 
       <InputContainer>
         <TextInput

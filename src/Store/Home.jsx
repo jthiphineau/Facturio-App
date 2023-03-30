@@ -5,26 +5,26 @@ import { action, map } from 'nanostores'
  * Création d'un store qui contient l'état de la page d'accueil
  */
 export const HomeStore = map({
-  todos: [],
+  invoices: [],
 })
 
 /**
  * Ajoute une chose à faire dans la liste
  */
-export const addTodoList = action(
+export const addInvoiceList = action(
   HomeStore,
-  'addTodoList',
+  'addInvoiceList',
   (store, title, user) => {
     // On créer une liste de chose à faire
-    const todoList = {
+    const invoiceList = {
       id: uniqid(),
       title: title,
       userId: user.id,
       username: user.email,
-      todos: [],
+      invoice: [],
     }
 
-    // On ajoute la liste dans le tableaux plus haut
-    store.setKey('todos', [todoList, ...store.get().todos])
+    // On ajoute la facture dans le tableaux plus haut
+    store.setKey('invoices', [invoiceList, ...store.get().invoices])
   },
 )

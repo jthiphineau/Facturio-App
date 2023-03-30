@@ -24,7 +24,7 @@ import {
   HeaderTitle,
 } from '../Style/NewList'
 import { InputContainer, TextInput } from '../Style/Registration'
-import { addTodoList } from '../Store/Home'
+import { addInvoiceList } from '../Store/Home'
 
 /**
  * Écran contenant la page de nouvelle liste
@@ -71,8 +71,10 @@ export default function NewList() {
           <GreenButton
             onClick={e => {
               e.preventDefault()
-              addTodoList(newListTitle, user)
+              addInvoiceList(newListTitle, user)
+              console.log("YO")
               navigate('/')
+              
             }}
           >
             <ButtonIcon className="fa-solid fa-paper-plane"></ButtonIcon>

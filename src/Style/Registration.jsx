@@ -60,7 +60,7 @@ export const TextInput = styled.input`
  */
 export const InputIcon = styled.i`
   font-size: 2rem;
-  color: ${Theme.colors.green};
+  color: ${Theme.colors.red};
 `
 
 /**
@@ -76,7 +76,7 @@ export const ButtonContainer = styled.div`
  * Bouton d'envoie
  */
 export const SendButton = styled.button`
-  background-color: ${Theme.colors.green};
+  background-color: ${Theme.colors.red};
   color: ${Theme.colors.white};
   font-weight: bold;
   font-family: ${Theme.fonts.normal};
