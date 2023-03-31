@@ -5,6 +5,7 @@ import Home from './Home'
 import Login from './Login'
 import NewList from './NewList'
 import Registration from './Registration'
+import NewClient from './NewClient'
 
 /**
  * Composant principal de l'application. C'est ce composant
@@ -30,6 +31,8 @@ export default function App() {
 
           {/* Route pour l'inscription */}
           <Route path="/inscription" element={<Registration />} />
+
+          <Route path="nouveau-client" element={<NewClient />} />
         </Routes>
       </BrowserRouter>
     </React.StrictMode>

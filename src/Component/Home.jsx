@@ -56,7 +56,21 @@ export default function Home() {
       <ButtonContainer>
         <GreenButton to="/nouvelle-liste">
           <ButtonIcon className="fa-solid fa-circle-plus"></ButtonIcon>
-          <ButtonLabel>Nouvelle liste</ButtonLabel>
+          <ButtonLabel>Nouvelle facture</ButtonLabel>
+        </GreenButton>
+        <GreenButton to="/nouveau-client">
+          <ButtonIcon className="fa-solid fa-circle-plus"></ButtonIcon>
+          <ButtonLabel>Nouveau client</ButtonLabel>
+        </GreenButton>
+      </ButtonContainer>
+      <ButtonContainer>
+        <GreenButton to="/nouvelle-liste">
+          <ButtonIcon className="fa-solid fa-magnifying-glass"></ButtonIcon>
+          <ButtonLabel>Chercher facture</ButtonLabel>
+        </GreenButton>
+        <GreenButton to="/nouveau-client">
+          <ButtonIcon className="fa-solid fa-magnifying-glass"></ButtonIcon>
+          <ButtonLabel>chercher client</ButtonLabel>
         </GreenButton>
       </ButtonContainer>
 

@@ -71,7 +71,7 @@ export default function Registration() {
       <TextContainer>
         Vous avez dèja un compte ?
         <br />
-        <Link to="/">Connéctez-vous</Link>
+        <Link to="/">Connectez-vous</Link>
       </TextContainer>
     </CenteredContainer>
   )
